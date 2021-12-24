@@ -1,5 +1,5 @@
 # WebsiteStatusChecker
- A simple bot using python to check a website status
+ A simple bot using python to check my websites status.
 
 ## Setup
 I have basically two more files (not commited) in the root directory: *my_sites.json* and *.env*. They look like this:
