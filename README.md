@@ -5,25 +5,27 @@
 I have basically two more files (not commited) in the root directory: *my_sites.json* and *.env*. They look like this:
 
 ### my_site.json
-'''
+```
 [
     "https://...",
     "https://...",
     "https://..."
 ]
-'''
+```
 
 i.e. just an array containing all of my websites url's.
 
+
 ### .env
-'''
+```
 SENDER=...
 SENDER_PWD=...
 SMTP_SERVER=...
 EMAIL_USE_TLS=True
 SMTP_PORT=...
 RECEIVER=...
-'''
+```
+
 
 This file stores all the sensiteve data.
 
