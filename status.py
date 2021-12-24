@@ -15,8 +15,11 @@ class WebsiteChecker():
         urls = self.my_sites
         self.my_sites_status = {}
         for url in urls:
-            status_code = urllib.request.urlopen(url).getcode()
-            self.my_sites_status[url] = {True: 'Up', False: 'Down'}[status_code == 200]
+            try:
+                status_code = urllib.request.urlopen(url).getcode()
+                self.my_sites_status[url] = {True: 'Up', False: 'Down'}[status_code == 200]
+            except:
+                self.my_sites_status[url] = "Couldn't complete request"
 
         return self.my_sites_status
 
