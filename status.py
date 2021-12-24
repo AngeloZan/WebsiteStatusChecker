@@ -37,7 +37,8 @@ class WebsiteChecker():
             now = time.ctime()
             mail_formatted = mail_content.format(time=now,status=status_str)
         
-        Mail().send_mail(mail_subject, mail_formatted)
+        email = Mail(mail_subject, mail_formatted)
+        email.send()
 
     def update_status(self):
         '''main function, checks urls and sends mail'''
